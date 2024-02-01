@@ -1,0 +1,163 @@
+name: timesheet
+bundleId: com.example.tracking
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+  path: ^1.8.2
+  get: ^4.6.5
+  flutter_local_notifications: ^15.1.0+1
+  path_provider: ^2.0.11
+  url_strategy: ^0.2.0
+  pin_code_fields: ^8.0.1
+  geolocator: ^9.0.2
+  google_maps_flutter: ^2.2.1
+  google_maps_flutter_web: ^0.5.1
+  flutter_typeahead: ^4.1.1
+  carousel_slider: ^4.1.1
+  shimmer_animation: ^2.1.0+1
+  universal_html: ^2.0.8
+  universal_platform: ^1.0.0+1
+  flutter_inappwebview: ^5.6.0+1
+  flutter_widget_from_html: ^0.8.5
+  fwfh_selectable_text: ^0.8.3+1
+  flutter_html: ^3.0.0-alpha.6
+  url_launcher: ^6.1.6
+  http: ^0.13.5
+  pointer_interceptor: ^0.9.3+3
+  phone_number: ^2.0.1
+  cached_network_image: ^3.2.2
+  photo_view: ^0.14.0
+  #image_compression_flutter: ^1.0.2
+  dotted_border: ^2.0.0+2
+  flutter_launcher_icons: ^0.13.1
+  shared_preferences: ^2.0.15
+  fancy_snackbar:
+    git:
+      url: https://github.com/MR0100/fancy_snackbar.git
+
+  connectivity_plus: ^4.0.1
+  flutter_contacts: ^1.1.5+1
+  azlistview: ^2.0.0
+  modal_bottom_sheet: ^2.1.2
+  slide_to_confirm: ^1.1.0
+  lottie: ^2.0.0
+  expandable_bottom_sheet: ^1.1.1+1
+  smooth_page_indicator: ^1.0.0+2
+  webview_flutter: ^3.0.4
+  flutter_svg: ^1.1.5
+  device_preview: ^1.1.0
+  permission_handler: ^10.1.0
+  screenshot: ^2.1.0
+  gallery_saver: ^2.3.2
+  modal_progress_hud_nsn: ^0.4.0
+  path_drawing: ^1.0.1
+  currency_text_input_formatter: ^2.1.7
+  flutter_custom_tabs: ^1.0.4
+  local_auth: ^2.1.2
+  #  google_mlkit_barcode_scanning: ^0.5.0
+  #  google_mlkit_face_detection: ^0.5.0x
+  flutter_secure_storage: ^8.0.0
+  app_settings: ^5.0.0
+  percent_indicator: ^4.2.2
+  #  firebase_app_check: ^0.1.1+2
+  flutter_native_splash: ^2.2.13
+  flutter_countdown_timer: ^4.1.0
+  crypto: ^3.0.2
+  firebase_storage: ^11.0.6
+  cloud_firestore: ^4.1.0
+  firebase_crashlytics: ^3.0.2
+  firebase_core: ^2.1.0
+  firebase_messaging: ^14.0.2
+  qr_flutter: ^4.1.0
+  qr_code_scanner: ^1.0.1
+  google_fonts: ^4.0.4
+  infinite_scroll_pagination: ^3.2.0
+  salomon_bottom_bar: ^3.3.2
+
+  table_calendar: ^3.0.9
+  flutter_holo_date_picker: ^1.1.2+1
+  shimmer: ^3.0.0
+  lite_rolling_switch: ^1.0.1
+  photo_manager: ^2.8.1
+  full_screen_image: ^2.0.0
+  cupertino_icons: ^1.0.2
+  camera: ^0.10.5+7
+  image_picker: ^1.0.5
+  share_plus: ^7.2.1
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/image/logo.png"
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/image/logo.png
+  android_12:
+    image: assets/image/logo.png
+    icon_background_color: "#ffffff"
+  android: true
+  ios: true
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/image/
+    - assets/language/
+    - assets/animationFile/
+    - assets/image/logo_login.jpg
+
+  fonts:
+    - family: NotoSerif
+      fonts:
+        - asset: assets/font/LatoRegular.ttf
+          weight: 400
+        - asset: assets/font/LatoMedium.ttf
+          weight: 500
+        - asset: assets/font/LatoBold.ttf
+          weight: 700
+        - asset: assets/font/Lato_Semibold.ttf
+          weight: 900
